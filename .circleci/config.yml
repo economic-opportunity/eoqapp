@@ -28,7 +28,8 @@ jobs:
           command: R CMD build .
       - run:
           name: Check package
-          command: R CMD check --as-cran --no-manual *tar.gz
+          command: |
+            Rscript -e 'devtools::check(manual = FALSE, document = FALSE)'
       - store_artifacts:
           path: eoqapp.Rcheck/
       - save_cache:
