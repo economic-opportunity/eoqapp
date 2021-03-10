@@ -1,0 +1,24 @@
+Package: eoqapp
+Title: EOQ App
+Version: 0.0.0.9000
+Authors@R: person('Seamus', 'McKinsey', email = 'seamus.mckinsey@gmail.com', role = c('cre', 'aut'))
+Description: PKG_DESC.
+License: MIT + file LICENSE
+Imports: 
+    config,
+    golem,
+    shiny,
+    processx,
+    attempt,
+    DT,
+    glue,
+    htmltools,
+    pkgload
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+URL: https://github.com/economic-opportunity/eoqapp
+BugReports: https://github.com/economic-opportunity/eoqapp/issues
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
