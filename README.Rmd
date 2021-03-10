@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CircleCI build status](https://circleci.com/gh/economic-opportunity/eoqapp.svg?style=svg)](https://circleci.com/gh/economic-opportunity/eoqapp)
 <!-- badges: end -->
 
 The goal of eoqapp is to ...
