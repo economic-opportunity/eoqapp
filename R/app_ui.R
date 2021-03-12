@@ -9,10 +9,17 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # List the first level UI elements here 
-    fluidPage(
-      h1("eoqapp")
+    navbarPage("EOQ Demo v0.1",
+               mod_tab_panel_ui(
+                 id = "individual_job", title = "Individual Job", 
+                 main_panel = "", input_options = get_individual_input_options()
+                 ),
+               mod_tab_panel_ui(
+                 id = "peer_comparison", title = "Comparison to Peers",
+                 main_panel = "", input_options = get_input_options()
+               )
+               )
     )
-  )
 }
 
 #' Add external Resources to the Application

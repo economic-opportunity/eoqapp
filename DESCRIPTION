@@ -13,7 +13,15 @@ Imports:
     DT,
     glue,
     htmltools,
-    pkgload
+    pkgload,
+    eoq (>= 0.0.0.9000),
+    dplyr,
+    tibble,
+    plotly,
+    shinyWidgets,
+    rjson,
+    shinythemes,
+    janitor
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
@@ -22,3 +30,5 @@ BugReports: https://github.com/economic-opportunity/eoqapp/issues
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Remotes: 
+    github::economic-opportunity/eoq
